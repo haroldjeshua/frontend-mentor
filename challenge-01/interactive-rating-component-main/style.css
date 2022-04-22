@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@200&display=swap');
+
+:root {
+    --color-primary: hsl(25, 97%, 53%);
+    --color-light: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-darkest-blue: hsl(216, 12%, 8%);
+
+    --font-main: 'Overpass', sans-serif;
+    --font-size-lead: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+
+    background-color: var(--color-darkest-blue);
+    color: var(--color-light);
+
+    font-family: var(--font-main);
+}
+
+.rating-card {
+    width: 400px;
+    /* background-color: var(--color-dark-blue); */
+    background-image: linear-gradient(to top, hsl(213, 20%, 18%), hsl(213, 20%, 24%));
+    padding: 2rem;
+    border-radius: 24px;
+}
+
+.rating-icon {
+    background-color: hsl(0deg 0% 100% / 11%);
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    margin-bottom: 1.75rem;
+}
+
+.rating-card h1 {
+    font-size: 1.75rem;
+    margin-bottom: .75rem;
+}
+
+.rating-card p {
+    color: var(--color-light-grey);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.rating {
+    width: 44px;
+    height: 44px;
+    background-color: hsl(0deg 0% 100% / 11%);
+    color: var(--color-light-grey);
+    font-weight: 700;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-btn {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    padding: .75rem 0;
+    border-radius: 50px;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.hide {
+    display: none;
+}
